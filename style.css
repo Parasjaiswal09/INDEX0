@@ -1,0 +1,250 @@
+/* General Reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #151618;  /* Dark background for a more sleek design */
+    color: #f7f7f7;  /* White text for good contrast */
+    line-height: 1.6;
+    overflow-x: hidden;
+    animation: fadeIn 1.5s ease-out;  /* Animation for page load */
+}
+
+/* Header Styling */
+header {
+    background-color: #182536;  /* Darker blue for header */
+    color: #f7f7f7;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav .logo h1 {
+    font-size: 28px;
+    color: #3192d6;  /* Bright blue for logo */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: #f7f7f7;  /* White links */
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+header nav ul li a:hover {
+    color: #206ba4;  /* Bright blue on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0e2331;  /* Dark blue background */
+    color: #f7f7f7;
+    text-align: center;
+    padding: 150px 20px;
+    margin-top: 60px;  /* To avoid overlapping with fixed header */
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* About Us Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #2d2c2c;  /* Darker gray for About Us */
+    margin-bottom: 60px;
+    animation: fadeIn 2s ease-out;
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #f7f7f7;  /* White headings */
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #f7f7f7;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #182536;  /* Darker blue-gray for Services */
+    margin-bottom: 60px;
+    animation: fadeIn 2s ease-out;
+}
+
+.services h2 {
+    font-size: 36px;
+    color: #f7f7f7;  /* White headings */
+    margin-bottom: 40px;
+}
+
+.service {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #2d2c2c;  /* Dark gray background for service cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.service h3 {
+    font-size: 28px;
+    color: #3192d6;  /* Bright blue for service titles */
+    margin-bottom: 20px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #f7f7f7;
+}
+
+.service:hover {
+    transform: translateY(-10px);  /* Floating effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #151618;  /* Dark background for Testimonials */
+    color: #f7f7f7;
+    text-align: center;
+    margin-bottom: 60px;
+    animation: fadeIn 2s ease-out;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #2d2c2c;  /* Darker gray for testimonial background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+    font-size: 18px;
+    color: #f7f7f7;
+}
+
+.testimonial h4 {
+    font-size: 16px;
+    color: #3192d6;  /* Bright blue for client names */
+    margin-top: 10px;
+}
+
+/* Contact Section with Form */
+.contact {
+    padding: 60px 20px;
+    background-color: #182536;
+    color: #f7f7f7;
+    text-align: center;
+    margin-bottom: 60px;
+    animation: fadeIn 2s ease-out;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #3192d6;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1d7ebd;  /* Darker blue on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #151618;
+    color: #f7f7f7;
+   
+}
+
+.service:hover {
+    transform: translateY(-10px);  /* Floating effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d7ebd;  /* Darker blue for buttons on hover */
+    transform: scale(1.05);  /* Slight scale-up effect */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+@keyframes gradient-animation {
+    0% {
+        background-color: #122430;
+    }
+    50% {
+        background-color: #182536;
+    }
+    100% {
+        background-color: #042135;
+    }
+}
+
+.hero {
+    animation: gradient-animation 10s ease infinite;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
